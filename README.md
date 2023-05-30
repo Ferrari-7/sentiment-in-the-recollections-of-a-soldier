@@ -4,4 +4,11 @@ In this repository I peform sentiment analysis on the personal recollections of 
 
 Lemuel Abijah Abbott's diary can be accessed on Project Gutenburg via this [link](https://www.gutenberg.org/ebooks/47332)
 
-1. prepare the text for analysis. The diary has been downloaded as a plain text file. The goal is to convert it into a csv file with the data and entry seperated. 
+The script in this repository does the following: 
+1. Prepares the text for analysis. The diary has been downloaded as a plain text file and can be found in the ```data``` folder. By using regex the dates and entries will be seperated into two separate lists.
+2. Peform sentiment analysis on all entries using a Transformers pipeline from the HuggingFace library.
+3. Saves a csv file to the folder ```out``` with all the data including a new column showing the month.
+4. Saves two text files to the folder ```out``` containing the five entries with the highest certainty score for negative sentiment and positive sentiment respectively. 
+5. Creates and saves three visualizations using Seaborn. One showing the distribution between negative and positive labels. Another showing the distribution of certainty scores. And a last showing the distribution between labels over the twelve month period.
+
+
