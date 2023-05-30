@@ -22,8 +22,6 @@ def clean_text():
     for i in range(len(dates)):
         current_date = dates[i]
         current_date = current_date.replace("\n", "")
-        current_date = re.sub(r'\t\w+DAY(.|,)\s', '', current_date)
-        current_date = re.sub(r'(.|,)\s', "", current_date)
         dates_clean.append(current_date)
     
     # E N T R I E S
@@ -129,12 +127,12 @@ def make_visualizations(df):
 
     # making a plot showin the distribution of negatives and posives
     sns.displot(df, x="label", hue="label", palette=palette)
-    plt.savefig(os.path.join("out", "dis_label.png"))
+    plt.savefig(os.path.join("visualizations", "dis_label.png"))
 
     # making a plot showing the distribution of scores
     plt.clf()
     sns.catplot(data=df, x="label", hue="label", y="score",  kind="swarm", palette=palette)
-    plt.savefig(os.path.join("out", "score.png"))
+    plt.savefig(os.path.join("visualizations", "score.png"))
     
     # making a plot showing the development of sentiment through the year
     plt.clf()
@@ -144,7 +142,7 @@ def make_visualizations(df):
                     horizontalalignment='right',
                     fontweight='light',
                     fontsize='small')
-    plt.savefig(os.path.join("out", "dis_month.png"))
+    plt.savefig(os.path.join("visualizations", "dis_month.png"))
 
 def main():
     dates_clean, entries_clean = clean_text()
