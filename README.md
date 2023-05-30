@@ -37,11 +37,11 @@ the visualization shows, that in the vast majority of cases the model was fairly
 
 The following example is entry that had the highest certainty score in the postive category: 
 
-    *"It's a lovely morning; went to Tunbridge with Dr. Jones; fine evening; am to stay at Mr. Isaac Merrill's tonight."*
+*"It's a lovely morning; went to Tunbridge with Dr. Jones; fine evening; am to stay at Mr. Isaac Merrill's tonight."*
 
 And likewise for the negative category: 
 
-    *"Chilly and cloudy; don't feel very well to-day, nor does anyone else; all stiff and lame; don't wonder at it for we had to march through mud and water ankle deep or more last night from the Rapidan without a rest. The regiments were completely disorganized; officers and men all got lost from their commands and both struggled and straggled into camp as best they could. It was a mob and a disgrace to the Third Corps."*
+*"Chilly and cloudy; don't feel very well to-day, nor does anyone else; all stiff and lame; don't wonder at it for we had to march through mud and water ankle deep or more last night from the Rapidan without a rest. The regiments were completely disorganized; officers and men all got lost from their commands and both struggled and straggled into camp as best they could. It was a mob and a disgrace to the Third Corps."*
 
 I had originally hypothesised that the score might reveal something about the intensity of the emotions expressed. However, I now believe that might not be the case since I recall reading entries decribing more harsh conditions. For instance being wounded on both the 9th July and the 19th of September and also seeing the dead and the severely injured. But perhaps the high certainty of the entry above might be due to the fact that every sentence express his sentiment while other negative entries also include further details presented in a more neutral tone.
 
