@@ -1,7 +1,7 @@
 # Import packages
 import re
 import os
-import operator import itemgetter
+from operator import itemgetter
 import pandas as pd
 from transformers import pipeline
 import matplotlib.pyplot as plt
@@ -110,8 +110,8 @@ def find_highest_scores(df):
 
     # saving negative results as txt file
     with open(os.path.join("out", "negative.txt"), 'w') as f:
-    for entry in df_negative:
-        f.write("%s\n" % entry)
+        for entry in df_negative:
+            f.write("%s\n" % entry)
     
     # L A B E L : P O S I T I V E
     df_positive = df[df["label"]=="POSITIVE"]
@@ -120,8 +120,8 @@ def find_highest_scores(df):
     df_positive = df_positive["entry"].tolist()
 
     with open(os.path.join("out", "positive.txt"), 'w') as f:
-    for entry in df_positive:
-        f.write("%s\n" % entry)
+        for entry in df_positive:
+            f.write("%s\n" % entry)
 
 def make_visualizations(df):
     # defing colour palette
