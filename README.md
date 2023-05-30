@@ -11,4 +11,15 @@ The script in this repository does the following:
 4. Saves two text files to the folder ```out``` containing the five entries with the highest certainty score for negative sentiment and positive sentiment respectively. 
 5. Creates and saves three visualizations using Seaborn. One showing the distribution between negative and positive labels. Another showing the distribution of certainty scores. And a last showing the distribution between labels over the twelve month period.
 
+## User instructions
+
+1. Install the necessary packages listed in the requirements file by using the setup shell script like so:
+
+```bash setup.sh```
+
+2. Run the code in the ```src``` folder by using the run shell script:
+
+```bash run.sh```
+
+
 
